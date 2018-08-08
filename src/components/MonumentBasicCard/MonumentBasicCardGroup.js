@@ -23,11 +23,20 @@ class MonumentBasicCardGroup extends Component {
     renderCardsInRow() {
         let cards = []
         for (let i = 0; i < this.state.size; i++) {
-            cards.push(<MonumentBasicCard
-                voivodeship_name='podkarpackie'
-                description='Mały park dworski'
-                name='Park dworski w Dynowie'
-                categories={['Park', 'Pałac']}/>);
+            cards.push(
+                <MonumentBasicCard
+                    id='57'
+                    voivodeship_name='podkarpackie'
+                    district_name='rzeszowski'
+                    commune_name='Dynów'
+                    place_name='Dynów'
+                    description='Mały park dworski'
+                    name='Park dworski w Dynowie'
+                    categories={['Park', 'Pałac']}
+                    rating='5.0'
+                    number_of_ratings='57'
+                    number_of_likes='13'
+                />);
         }
         return cards;
     }
